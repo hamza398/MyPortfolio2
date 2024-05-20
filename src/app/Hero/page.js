@@ -1,3 +1,4 @@
+'use effect'
 import React, { useEffect, useRef, useState } from "react";
 import "../globals.css";
 import Pc from "./Pc";
