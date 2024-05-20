@@ -27,7 +27,7 @@ x: "-130%"
       gsap.to(three, threeAnimate);
     }
     return () => gsap.killTweensOf(element);
-  }, [elementRef, threeAnimate]);
+  },[]);
   const [isVisible, setIsVisible] = useState(false);
 
   const handleMouseEnter = () => {
