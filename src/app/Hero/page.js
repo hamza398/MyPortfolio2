@@ -21,7 +21,7 @@ const Header = ({
         }}
       >
         <div className="header"></div>
-        <div className=" ml-14   relative z-30 header-text flex items-center justify-center flex-col h-[27rem] w-[60%] p-7 ">
+        <div className="    relative z-30 header-text flex items-center justify-center flex-col h-[27rem] w-[60%]  ">
           <Canvas>
           <ambientLight intensity={1.5} />
             <directionalLight
@@ -36,7 +36,7 @@ const Header = ({
             <Cube/>
           </Canvas>
         </div>
-        <div  className="canvasComponent h-[100vh] w-[600px] absolute top-0 left-[1500px] ">
+        <div  className="canvasComponent h-[100vh] w-[600px] absolute top-0 left-[700px] ">
           <Canvas shadows>
             <OrbitControls />
             <ambientLight intensity={1.5} />
