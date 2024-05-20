@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Rubik+Scribble&display=swap');
+
+body {
+  height: 100vh;
+font-family: "Rubik Scribble", system-ui;
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.h1{
+  font-family: "Rubik Scribble", system-ui;
+
+}
+.pencil {
+
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+}
+
+.pencil.animate {
+  display: block;
+  animation: moveUpDown 1s ease-in-out forwards;
+  -webkit-animation: moveUpDown 1s ease-in-out forwards;
+}
+
+@keyframes moveUpDown {
+  0% { transform: translateY(0); -webkit-transform:; -moz-transform:; -ms-transform:; -o-transform:; }
+  50% { transform: translateY(-50px); -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -ms-transform: translateY(-50px); -o-transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+
+.logo{
+  font-family: "Rubik Scribble", system-ui;
+  font-style: normal;
+}
+
+.overlay{
+  background: #ff76cfc4;
+  height: 100px;
+  width: 100%;
+}
+
