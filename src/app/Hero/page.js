@@ -9,35 +9,7 @@ import Cube from "./Cube";
 const Header = ({
   
 }) => {
-  const elementRef = useRef(null);
-  const threeRef = useRef(null)
-
-const threeAnimate  =  {
   
-  duration: 2.5,
-ease: "power1.in",
-x: "-130%"
-
-}
-  useEffect(() => {
-    const element = elementRef.current;
-    const three = threeRef.current; 
-
-    if (three) {
-      gsap.to(three, threeAnimate);
-    }
-    return () => gsap.killTweensOf(element);
-  },[]);
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsVisible(false);
-  };
-
   return (
     <>
       <div
@@ -64,7 +36,7 @@ x: "-130%"
             <Cube/>
           </Canvas>
         </div>
-        <div ref={threeRef} className="canvasComponent h-[100vh] w-[600px] absolute top-0 left-[1500px] ">
+        <div  className="canvasComponent h-[100vh] w-[600px] absolute top-0 left-[1500px] ">
           <Canvas shadows>
             <OrbitControls />
             <ambientLight intensity={1.5} />
