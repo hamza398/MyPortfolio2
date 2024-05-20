@@ -11,13 +11,7 @@ const Header = ({
 }) => {
   const elementRef = useRef(null);
   const threeRef = useRef(null)
-const elementAnimate  =  {  
 
-  duration : 2.5 ,
-  ease : "power1.out",
-  y : 500,
-  delay : 1.5,
-}
 const threeAnimate  =  {
   
   duration: 2.5,
@@ -28,9 +22,7 @@ x: "-130%"
   useEffect(() => {
     const element = elementRef.current;
     const three = threeRef.current; 
-    if (element) {
-      gsap.to(element, elementAnimate);
-    }
+
     if (three) {
       gsap.to(three, threeAnimate);
     }
