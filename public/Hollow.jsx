@@ -13,21 +13,7 @@ export function Model(props) {
           code.
         </Text>
       </group>
-      <mesh
-        geometry={nodes.Object_13.geometry}
-        material={materials["Smooth_Stone.001"]}
-        position={[0, -0.034, 0]}
-        rotation={[0, 0.879, 0]}
-        scale={[4.635, 0.206, 4.635]}
-      />
-      <mesh
-        geometry={nodes.Object_15.geometry}
-        material={materials.Pavestones}
-        position={[0, -0.034, 0]}
-        rotation={[0, 0.879, 0]}
-        scale={[4.635, 0.206, 4.635]}
-      />
-    </group>
+          </group>
   );
 }
 
