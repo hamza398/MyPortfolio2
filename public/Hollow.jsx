@@ -10,7 +10,7 @@ export function Model(props) {
           Hello my name is Hamza {'\n'} 
           I like making fun {'\n'}
           & interactive things with {'\n'} 
-          code and Editors.
+          code
         </Text>
       </group>
     </group>
