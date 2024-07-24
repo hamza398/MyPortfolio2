@@ -35,21 +35,6 @@ const Header = ({
             <Cube/>
           </Canvas>
         </div>
-        <div  className="canvasComponent h-[100vh] w-[600px] absolute top-0 left-[700px] ">
-          <Canvas shadows>
-            <OrbitControls />
-            <ambientLight intensity={1.5} />
-            <directionalLight
-              position={[10, 10, 10]}
-              angle={0.15}
-              penumbra={1}
-              castShadow
-              shadow-mapSize={[2024, 2024]}
-            />
-            <pointLight position={[10, 0, 0]} />
-            <Pc />
-          </Canvas>
-        </div>
       </div>
     </>
   );
