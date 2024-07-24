@@ -4,7 +4,6 @@ import "../globals.css";
 import Pc from "./Pc";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Text } from "@react-three/drei";
-import { gsap } from "gsap";
 import Cube from "./Cube";
 const Header = ({
   
